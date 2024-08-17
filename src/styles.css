@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url("../images/coron-bg.jpg");
   background-repeat: none;
   background-size: cover;
@@ -55,6 +55,10 @@ header a {
   background: white;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -62,6 +66,7 @@ header a {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 .grid-2-cols {
@@ -69,13 +74,48 @@ header a {
 }
 
 .grid-3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-cols-1st-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
+}
+
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+section.second {
+  background: #f8f8f8;
 }
 
 main {
@@ -101,6 +141,22 @@ main h3 {
   margin: 0;
 }
 
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+}
+
 main p {
   font-style: normal;
   font-weight: 400;
@@ -120,7 +176,6 @@ footer {
 
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -166,5 +221,14 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
