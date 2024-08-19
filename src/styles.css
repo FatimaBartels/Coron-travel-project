@@ -64,9 +64,15 @@ header a {
   grid-gap: 64px;
 }
 
+.img-why-coron {
+  max-width: 100%;
+  display: block;
+}
+
 .img-responsive {
   max-width: 100%;
   display: block;
+  aspect-ratio: 1/1;
 }
 
 .grid-2-cols {
@@ -83,7 +89,7 @@ header a {
 
 .embed {
   width: 100%;
-  aspect-ratio: 1/0;
+  aspect-ratio: 1/1;
 }
 
 .youtube-embeds {
